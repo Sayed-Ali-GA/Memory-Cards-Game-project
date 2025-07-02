@@ -1,0 +1,162 @@
+ body{
+    background-color: #d0bfff;
+    margin: 0px;
+    display: flex;align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+
+}
+
+
+.box{
+    background-color:#abd9fc;
+    border-radius: 40px;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+    align-items: center;
+    width: 50vw;
+    height: 85vh;
+
+  border: 3px solid #d0bfff;
+  padding: 40px;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+h1{
+    margin: 1px;
+    font-size: 35px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5vh;
+}
+
+#start{
+    background-color: rgb(255, 74, 104);
+    font-size: 20px;
+    padding: 20px 5px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: transform 0.2s;
+    border: 2px solid rgb(0, 0, 0);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#how{
+background-color: rgba(117, 104, 253, 0.82);
+    font-size: 20px;
+    padding: 20px 5px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: transform 0.2s;
+    border: 2px solid rgb(0, 0, 0);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.btn-1{
+  margin: 9px;
+}
+
+.btn-2{
+    margin-left: 350px;
+}
+   
+                                      /* ---------------- part cards & start ------------ */
+ /* ----------------------------------------------------------------------------------------------------------------------------------- */
+
+.bax1 {
+  background-color: #faffd1;
+  border-radius: 40px;
+  border: 3px solid #8e44ad;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+
+.row {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.card {
+  width: 90px;
+  height: 120px;
+  perspective: 1000px;
+}
+
+.card-inner {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.6s;
+}
+
+.card.flipped .card-inner {
+  transform: rotateY(180deg);
+}
+
+.card-front, .card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 12px;
+  border: 2px solid black;
+}
+
+.card-front {
+  background-color: #89cfff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+}
+
+.card-back {
+  background-color: pink;
+   display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 50px;
+  transform: rotateY(180deg);
+}
+
+#reset {
+  background-color: #596bf6b5;
+  color: black;
+  border: 3px solid black;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 10px 2px;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+#reset:hover {
+  transform: scale(1.05);
+}
+
+#back{
+    padding: 9px;
+    border-radius: 40px;
+    font-weight: bold;
+    border: 3px solid rgb(0, 0, 0);
+    font-size: 23px;
+    background-color: #ff2c2ca6;
+     cursor: pointer;
+  transition: transform 0.2s;
+}
+
+#back:hover {
+  transform: scale(1.05);
+}
+
+.BtnBack{
+    margin-top: 15px;
+    margin-right: 300px;
+}
