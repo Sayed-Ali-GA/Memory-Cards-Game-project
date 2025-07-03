@@ -6,12 +6,35 @@ let matched = 0;
 let cardOne =null
 let cardTwo = null
 let disableDeck = false;
-let timer
+let sec = 30;
+let score = 0;
+let msg
 /*----- Cached Element References  -----*/
 const cards = document.querySelectorAll('.card')
 const resetBtn = document.getElementById('reset')
+const scoreDisplay = document.querySelector('.score')
+const timerDisplay = document.querySelector('.timer')
 
 /*--------------- Functions -------------*/
+ function render(){
+    scoreDisplay.textContent = `Score: ${score}`
+    timerDisplay.textContent = `Timer:00:${sec}`
+ }
+
+if(score === 6){
+  
+}
+
+function timeraa(){ 
+    if(flipCard){ 
+    
+        sec--;
+        }
+          timerDisplay.textContent = `Timer: ${sec}`
+    }
+    
+    
+     
 
  function flipCard(card){
     if(card === cardOne || disableDeck) return
@@ -31,6 +54,7 @@ const resetBtn = document.getElementById('reset')
      const id2 = cardTwo.querySelector('.card-back').id
        if (id1 === id2) {
              matched++;
+             score++;
               cardOne = null;
                cardTwo = null;
                 disableDeck = false;
@@ -43,12 +67,16 @@ const resetBtn = document.getElementById('reset')
                disableDeck = false;
     }, 1000);
   }
+render();
 }
 
 
 resetBtn.addEventListener('click', () => {
   cards.forEach(card => {
     card.classList.remove('flipped');
+    score = 0
+    scoreDisplay.textContent = null
+           scoreDisplay.textContent = `Score: 0`
   })})
 
 cards.forEach(card => {
@@ -58,7 +86,7 @@ cards.forEach(card => {
 
 
 /*----------- Event Listeners ----------*/
-
+resetBtn.addEventListener('click',resetBtn)
 
 
 
