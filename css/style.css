@@ -72,6 +72,7 @@ background-color: rgba(117, 104, 253, 0.82);
   flex-direction: column;
   gap: 20px;
   box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
 }
 
 
@@ -159,4 +160,10 @@ background-color: rgba(117, 104, 253, 0.82);
 .BtnBack{
     margin-top: 15px;
     margin-right: 300px;
+}
+
+.time{
+    margin-bottom: 540px;
+    margin-right: 150px;
+    width: 0;
 }
