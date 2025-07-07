@@ -1,4 +1,4 @@
- body{
+body{
     background-color: #d0bfff;
     margin: 0px;
     display: flex;align-items: center;
@@ -7,7 +7,6 @@
     font-family: 'Comic Sans MS', cursive, sans-serif;
 
 }
-
 
 .box{
     background-color:#abd9fc;
@@ -42,6 +41,11 @@ h1{
     border: 2px solid rgb(0, 0, 0);
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+
+ #start:hover {
+  transform: scale(1.05);
+}
+
 #how{
 background-color: rgba(117, 104, 253, 0.82);
     font-size: 20px;
@@ -59,8 +63,12 @@ background-color: rgba(117, 104, 253, 0.82);
 .btn-2{
     margin-left: 350px;
 }
+
+.btn-2:hover {
+  transform: scale(1.05);
+}
    
-                                      /* ---------------- part cards & start ------------ */
+                            /* ---------------- part of cards & start.HTML ------------ */
  /* ----------------------------------------------------------------------------------------------------------------------------------- */
 
 .bax1 {
@@ -75,7 +83,6 @@ background-color: rgba(117, 104, 253, 0.82);
   cursor: pointer;
   margin-right: 200px;
 }
-
 
 .row {
   display: flex;
@@ -108,6 +115,10 @@ background-color: rgba(117, 104, 253, 0.82);
   backface-visibility: hidden;
   border-radius: 12px;
   border: 2px solid black;
+}
+
+.card:hover {
+  transform: scale(1.01);
 }
 
 .card-front {
@@ -164,14 +175,15 @@ background-color: rgba(117, 104, 253, 0.82);
 }
 
 .time{
-    margin-bottom: 520px;
-    margin-right: 170px;
-    width: 0;
+    margin-right: 90px;
+    margin-bottom: 300px;
 }
 
-.score{
-     margin-bottom: 540px;
-    margin-right: 150px;
-    flex-direction: row-reverse;
-    
+.message{
+    color: rgb(64, 190, 64);
+    font-size: 25px;
+}
+.msgLos{
+    color: red;
+    font-size: 25px;
 }
