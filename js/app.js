@@ -2,33 +2,31 @@
 
 
 /*---------- Variables (state) ---------*/
-let cardOne =null
-let cardTwo = null
-let disableDeck = false;
-let sec = 20;
-let score = 0;
+ let cardOne =null
+ let cardTwo = null
+ let disableDeck = false;
+ let sec = 20;
+ let score = 0;
 /*----- Cached Element References  -----*/
-const cards = document.querySelectorAll('.card')
-const resetBtn = document.getElementById('reset')
-const scoreDisplay = document.querySelector('.score')
-const timerDisplay = document.querySelector('.timer')
-const messageEl = document.querySelector('.message')
-const msgaLo = document.querySelector('.msgLos')
-
+ const cards = document.querySelectorAll('.card')
+ const resetBtn = document.getElementById('reset')
+ const scoreDisplay = document.querySelector('.score')
+ const timerDisplay = document.querySelector('.timer')
+ const messageEl = document.querySelector('.message')
+ const msgaLo = document.querySelector('.msgLos')
 /*--------------- Functions -------------*/
-
-function startTimer() {
-  timer = setInterval(() => {
+ function startTimer() {
+   timer = setInterval(() => {
     if (sec > 0 ) {
       sec--;
       timerDisplay.textContent = `Timer:00:${sec < 10 ? '0' + sec: sec}`;
-} else {
+ } else {
       clearInterval(timer);
       disableDeck = true;
       msgaLo.textContent = `You lose! Time's up`;
     }
   }, 1000);
-}
+ }
 
  function render(){
     scoreDisplay.textContent = `Score: ${score}`
@@ -60,8 +58,8 @@ function startTimer() {
          clearInterval(timer);
          disableDeck = true
          messageEl.textContent = `You win in ${sec}s `
- } 
-} else {
+  } 
+ } else {
      setTimeout(() => {
        cardOne.classList.remove('flipped');
        cardTwo.classList.remove('flipped');
@@ -73,11 +71,10 @@ function startTimer() {
    render();
  }
 
-
    resetBtn.addEventListener('click', () => {
      cards.forEach(card => {
        card.classList.remove('flipped');
-       sec = 20 // for timer begain 20s
+       sec = 20 
        score = 0 
      scoreDisplay.textContent = null
         scoreDisplay.textContent = `Score: 0`
@@ -92,8 +89,7 @@ function startTimer() {
 
   startTimer() 
 
-cards.forEach(card => {
+ cards.forEach(card => {
   card.addEventListener('click', () => flipCard(card));
-});
-
+ });
 /*----------- Event Listeners ----------*/
