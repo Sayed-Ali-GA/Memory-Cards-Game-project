@@ -10,10 +10,10 @@ Great for improving focus and memory! 🧩
 
 ## 🚀 Getting Started
 
-👉 **Play it here:** [Click here to play](https://your-deployment-link.com)
+👉 **Play it here:** [Click here to play](https://sayed-ali-ga.github.io/Memory-Cards-Game-project/)
 
 👉 **Planning Materials:**
-- [User Stories](./planning/user-stories.md)
+- [User Stories](https://trello.com/b/vUK7wMfP/project-1)
 
 ### 🎮 How to Play
 1. Click **Start Game** — the **timer (20 seconds)** will start automatically.
